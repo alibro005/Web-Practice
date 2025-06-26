@@ -1,10 +1,10 @@
-// const apiKey = "15da8f52bf238f56902368b0e1c2e43c&query=New York";
-// const apiUrl = "http://api.weatherstack.com/current?";
 
-const apiKey = "f50dcfe932d630ec4c0bc72002e28187";
+
+
+const apiKey = "";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
 
-//  "http://api.weatherstack.com/current?access_key=15da8f52bf238f56902368b0e1c2e43c&query=NewYork"
+
 
 const input = document.querySelector(".search");
 const btn = document.querySelector(".btn");
