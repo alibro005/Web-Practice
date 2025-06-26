@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <!-- <div class="bg-black">
+           <h1 id="heading" class="heading">DOM manipulation</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officia explicabo cum. In nulla ipsum ratione ducimus facere. At quos totam debitis recusandae veritatis, alias harum error expedita repudiandae neque?</p>
+    </div> -->
+
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main";
+    div.style.backgroundColor="green";
+    div.style.color="black"
+    div.style.padding="10px"
+    div.id = Math.round(Math.random() * 10 + 1)
+    //    div.innerText="Hello World"
+    const addtext = document.createTextNode('Hello World')
+     div.appendChild(addtext);
+
+    document.body.appendChild(div);
+
+  
+
+</script>
+
+
+</html>

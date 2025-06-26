@@ -1,0 +1,157 @@
+@media (max-width: 1000px) {
+  #hero {
+    margin-left: 10px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__content h1 {
+    width: auto;
+    height: auto;
+  }
+
+  .hero__content p {
+    width: auto;
+  }
+  .hero__content {
+    z-index: 800;
+  }
+  #hero {
+    position: relative;
+    /* top: 100px; */
+  }
+
+  .hero_right {
+    position: relative;
+    top: 200px;
+    margin-top: 20px;
+    background-size: 450px 500px;
+  }
+
+  .hero__img {
+    /* width: 400px; */
+    /* height: auto; */
+    height: 380px;
+  }
+  #hero_btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  .hero__content {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero_right {
+    top: 100px;
+  }
+  .hero__content {
+    bottom: 130px;
+  }
+}
+@media (max-width: 1200px) {
+  #feature {
+    height: 150rem;
+  }
+  #blog {
+    height: 120rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero__content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__img {
+    width: 350px;
+  }
+
+  .wait__btn {
+    font-size: 0.6rem;
+    padding: 6px 12px;
+  }
+
+  .hero_right {
+    background-size: 350px 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero__img {
+    width: 300px;
+  }
+
+  .wait__btn {
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+
+  .hero_right {
+    background-size: 300px 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero__content p {
+    font-size: 0.8rem;
+  }
+
+  .hero__img {
+    width: 250px;
+  }
+
+  .wait__btn {
+    font-size: 0.45rem;
+    padding: 4px 8px;
+  }
+
+  .hero_right {
+    background-size: 250px 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__content h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero__content p {
+    font-size: 0.7rem;
+  }
+
+  .hero__img {
+    width: 200px;
+  }
+
+  .wait__btn {
+    font-size: 0.4rem;
+    padding: 3px 6px;
+  }
+
+  .hero_right {
+    background-size: 200px 250px;
+  }
+}

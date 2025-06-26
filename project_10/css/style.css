@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100..900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --orange-color: #f39f20;
+  --green-color: #0ac297;
+  --blue-color: #0d96f2;
+  --white-color: #ffffff;
+  --black-color: #131416;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
+  --biggest-font-size: 5rem;
+  --big-font-size: 2rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 15rem;
+    --big-font-size: 6rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.car__orange {
+  --color-car: var(--orange-color);
+}
+
+.car__green {
+  --color-car: var(--green-color);
+}
+
+.car__blue {
+  --color-car: var(--blue-color);
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--orange-color);
+  z-index: var(--z-fixed);
+}
+
+.nav__close {
+  display: none;
+}
+.nav__toggle {
+  display: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.nav__logo,
+.nav__link {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+
+@media (min-width: 240px) and (max-width: 767px) {
+  .nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    border: 2px solid var(--white-color);
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgb(97, 97, 97, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 100%;
+    width: 50%;
+    padding: 7rem 3.5rem 3.5rem;
+    transition: right 0.5s;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+}
+
+@media (min-width:287px) and (max-width:422px) {
+  .nav__menu{
+    padding: 7rem 2rem 3rem;
+    width: 70%;
+  }
+}

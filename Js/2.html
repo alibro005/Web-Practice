@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Muhammad Ali Siddiqui</h1>
+    <button id="button">Click Me</button>
+</body>
+<script>
+    const helo = function () {
+        console.log("HELLO WORLD");
+    }
+    // setTimeout(function(){
+    //     console.log("Hello world")
+    // },2000)
+
+    const text = function () {
+        document.querySelector('h1').innerHTML = "Chai aur JS";
+
+    }
+    // setTimeout(text,2000);
+    const changeMe = setTimeout(text, 2000);
+
+    document.querySelector('#button').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log("Stopped");
+    })
+   
+
+    // document.querySelector("h1").innerText="hello World"
+
+    // setTimeout(helo,2000);
+    
+</script>
+
+</html>

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f464;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(69, 65, 65, 0.327);
+  z-index: 1000;
+  height: 4rem;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.nav__close {
+  display: none;
+}
+.nav__toggle {
+  display: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 4rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.nav__link {
+  color: whitesmoke;
+  font-weight: 500;
+}
+.nav__logo {
+  font-weight: 600;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.hero {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("images/food.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: background-image 1s ease;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.menu,
+.about,
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu h2,
+.about h2,
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+  border: 0.1px solid #333;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("images/food2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  color: #ccc;
+}
+
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 12px 20px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact textarea {
+  height: 6.5rem;
+  text-align: start;
+}
+
+.contact button {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.8px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 55%;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    border: 2px solid black;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgb(97, 97, 97, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 100%;
+    width: 50%;
+    padding: 7rem 3.5rem 3.5rem;
+    transition: right 0.5s;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+}
+
+@media (min-width: 287px) and (max-width: 422px) {
+  .nav__menu {
+    padding: 7rem 2rem 3rem;
+    width: 70%;
+  }
+}
+
+#status {
+  color: green;
+  font-size: 1rem;
+}

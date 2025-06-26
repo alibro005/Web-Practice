@@ -1,0 +1,29 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 2px solid black;
+    padding: 6rem;
+    margin: 2rem;
+    border-radius: 10px;
+    
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#skyblue{
+    background-color: skyblue;
+}
