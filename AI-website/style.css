@@ -221,10 +221,10 @@ li {
   }
 }
 
-/* ____Feature_____ */
+/* ____ Feature_____ */
 
 #feature {
-  height: 120vh;
+  height: 140vh;
 }
 #feature h1 {
   color: whitesmoke;
@@ -280,7 +280,7 @@ li {
   margin: 5px 0;
 }
 
-/* ___Developer_____ */
+/* ____ Developer _____ */
 
 .developer-section {
   max-width: 1200px;
@@ -314,7 +314,6 @@ li {
   padding: 20px;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.628);
-  /* transform: translateY(50px); */
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -403,7 +402,7 @@ li {
   color: #0056b3;
 }
 
-/* __contact___ */
+/* ____Contact___ */
 
 .contact-section {
   max-width: 600px;

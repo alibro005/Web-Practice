@@ -71,22 +71,21 @@ a:visited {
   border: 1px solid #43a046;
   border-radius: 4px;
 }
-.btn:hover{
+.btn:hover {
   background-color: #16cf1cca;
 }
 .btn img {
   width: 11px;
   height: 11px;
 }
-.hamburger{
-  display:none ;
+.hamburger {
+  display: none;
 }
-.hide{
+.hide {
   display: none;
 }
 
-@media (min-width:250px) and (max-width: 800px) {
-
+@media (min-width: 250px) and (max-width: 800px) {
   .hamburger {
     display: block;
     border: none;
@@ -122,10 +121,9 @@ a:visited {
     flex-direction: column;
     align-items: center;
   }
-  #footer{
+  #footer {
     flex-direction: column;
     padding: 20px;
-    
   }
 }
 
@@ -286,7 +284,7 @@ a:visited {
   font-size: 12px;
   color: #777;
 }
-#news{
+#news {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,7 +292,6 @@ a:visited {
   color: #555;
   background-color: rgba(255, 255, 255, 0.635);
   margin-bottom: 80px;
-  
 }
 #news h1 {
   color: #43a046;
@@ -309,18 +306,17 @@ a:visited {
   height: 400px;
   width: 400px;
 }
-#contact{
+#contact {
   display: flex;
   gap: 8px;
 }
-#news-right p a{
-    color: #43a046;
-
+#news-right p a {
+  color: #43a046;
 }
-#news-right .text-news{
+#news-right .text-news {
   margin-top: 30px;
 }
-input{
+input {
   width: 300px;
   height: 40px;
   padding-left: 10px;
@@ -330,46 +326,43 @@ input{
   height: 40px;
   margin-left: 0;
 }
-.text-news{
+.text-news {
   margin-top: 10px;
 }
-@media screen and (max-width:868px){
-  #testimonials{
+@media screen and (max-width: 868px) {
+  #testimonials {
     height: 70rem;
   }
-    #news{
-      display: block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-      #news img {
-        width: 300px;
-        height: 300px;
-      }
-      #contact{
-        justify-content: center;
-      }
+  #news {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #news img {
+    width: 300px;
+    height: 300px;
+  }
+  #contact {
+    justify-content: center;
+  }
 }
-@media  screen and (max-width:378px) {
-   #clients{
+@media screen and (max-width: 378px) {
+  #clients {
     height: 120rem;
-   }
+  }
 }
-#footer{
+#footer {
   display: flex;
   justify-content: space-around;
   height: 13rem;
-
 }
 #footer h2 {
-   font-weight: 480;
-   font-size: 1.2rem;
-   margin-top: 30px;
-
+  font-weight: 480;
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
-#footer ol{
+#footer ol {
   color: #555;
   margin-top: 10px;
 }
-
