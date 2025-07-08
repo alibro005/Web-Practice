@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  font-size: 0.93rem;
+}
+/* ---------nav bar--------- */
+.navbar {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+#navbar nav {
+  display: flex;
+  justify-content: space-around;
+}
+#navbar nav a {
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(41, 60, 200);
+  border: 3px;
+  border-radius: 10px;
+}
+
+#navbar li {
+  color: white;
+  list-style: none;
+  margin-left: 3rem;
+}
+#icons {
+  font-size: 25px;
+}
+/* footer */
+footer {
+    padding-top: 20px;
+    background-color: rgba(207, 207, 207, 0.258);
+    opacity: 0.9;
+    align-items: center;
+  }
+  #footer-item {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+  }
+  #foot {
+    text-align: center;
+  }
+  /* ---------Parkings */
+#Parkings {
+    margin-left: 45px;
+    margin-right: 10px;
+    height: 100vh;
+    position: relative;
+    top: 8rem;
+  }
+  #line {
+    width: 89%;
+    height: 2px;
+    border: 1px solid rgb(23, 78, 198);
+    background-color: rgb(23, 78, 198);
+  }
+  .line_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  

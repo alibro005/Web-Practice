@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  font-size: 0.93rem;
+}
+/* ---------nav bar--------- */
+.navbar {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+#navbar nav {
+  display: flex;
+  justify-content: space-around;
+}
+#navbar nav a {
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(41, 60, 200);
+  border: 3px;
+  border-radius: 10px;
+}
+
+#navbar li {
+  color: white;
+  list-style: none;
+  margin-left: 3rem;
+}
+#icons {
+  font-size: 25px;
+}
+/* ----------Contact Details------- */
+#Contact {
+    margin-left: 45px;
+    height: 100vh;
+    position: relative;
+    top: 6rem;
+    height: 120vh;
+  }
+  
+  .line_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  #line{
+    width: 87%;
+    height: 2px;
+    border: 1px solid rgb(23, 78, 198);
+    background-color: rgb(23, 78, 198);
+
+  }
+  
+  .line {
+    width: 82%;
+    height: 2px;
+    border: 1px solid rgb(23, 78, 198);
+    background-color: rgb(23, 78, 198);
+  }
+  .color {
+    color: rgb(23, 78, 198);
+  }
+  /* ------- Contact Form-------- */
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  .form-group button {
+    width: 100px;
+    padding: 3px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  /*------- FOOTER --------*/
+footer {
+    padding-top: 20px;
+    background-color: rgba(207, 207, 207, 0.258);
+    opacity: 0.9;
+    align-items: center;
+  }
+  #footer-item {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+  }
+  #foot {
+    text-align: center;
+  }
+  
