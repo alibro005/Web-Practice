@@ -30,7 +30,6 @@ This repo is meant to:
 - [Guess No.](https://alibro005.github.io/Web-Practice/guess_no/)
 - [Tic Tac Toe](https://alibro005.github.io/Web-Practice/project_6/)
 - [Weather App](https://alibro005.github.io/Web-Practice/project_8/) (API Not Added)
-- [TO DO App](https://alibro005.github.io/Web-Practice/To_Do/)
   
 ###  License
   
