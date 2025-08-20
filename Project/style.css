@@ -6,53 +6,138 @@
 }
 body {
   background-color: white;
-  font-family: "Poppins", serif;
+  font-family: "poppins", "serif";
   font-size: 1rem;
   overflow-x: hidden;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-  height: 5rem;
+/*_______ Header __________ */
+
+.header {
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 1000;
+  height: 4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-#logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+body.light .header {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-#logo-img {
-  height: 14px;
-  width: 24px;
-}
-.logo-text {
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-#nav-items {
-  display: flex;
-  align-items: center;
-}
-
-#nav-items ul {
-  display: flex;
-  gap: 2.8rem;
-}
-#nav-items ul li {
+ul {
   list-style: none;
 }
-#nav-items ul li {
+a {
+  text-decoration: none;
+}
+
+.nav__close {
+  display: none;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 4rem;
 }
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.nav__link {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.nav__logo {
+  font-size: larger;
+  font-weight: 600;
+  color: #23ce6b;
+  font-size: 1.9rem;
+}
+
+body.light .nav__link {
+  color: #212121;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* __________ Nav_media Queries ___________ */
+
+@media (min-width: 240px) and (max-width: 840px) {
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header {
+    backdrop-filter: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .nav__toggle,
+  .nav__close {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    border: 2px solid white;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgb(97, 97, 97, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 100%;
+    width: 50%;
+    padding: 7rem 3.5rem 3.5rem;
+    transition: right 0.5s;
+    z-index: 999;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+}
+
+@media (min-width: 207px) and (max-width: 422px) {
+  .nav__menu {
+    padding: 7rem 2rem 3rem;
+    width: 70%;
+  }
+}
+
 a:link {
   text-decoration: none;
   color: gray;
@@ -78,26 +163,9 @@ a:visited {
   width: 11px;
   height: 11px;
 }
-.hamburger {
-  display: none;
-}
-.hide {
-  display: none;
-}
 
-@media (min-width: 250px) and (max-width: 800px) {
-  .hamburger {
-    display: block;
-    border: none;
-  }
-  .hamburger img {
-    height: 20px;
-    width: 20px;
-  }
-  #nav-btn {
-    display: none;
-  }
-}
+/* ________Home _________ */
+
 #home {
   display: flex;
   gap: 200px;
@@ -164,6 +232,7 @@ a:visited {
   margin-left: 0;
   margin-top: 30px;
 }
+/* __________ Clients___________ */
 #clients {
   height: 70rem;
 }
@@ -244,6 +313,7 @@ a:visited {
     height: 110rem;
   }
 }
+/* _______Testimonials ___________ */
 #testimonials {
   height: 40rem;
 }
@@ -284,6 +354,7 @@ a:visited {
   font-size: 12px;
   color: #777;
 }
+/* _________News__________ */
 #news {
   display: flex;
   align-items: center;
@@ -352,6 +423,7 @@ input {
     height: 120rem;
   }
 }
+/* _______Footer ___________ */
 #footer {
   display: flex;
   justify-content: space-around;
