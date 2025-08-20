@@ -23,6 +23,13 @@ This repo is meant to:
 - This is **not a professional project**, but a personal learning record
 - You're welcome to explore the code and reuse anything helpful
 - Suggestions and feedback are always welcome!
+
+###  Live Links
+- [Nexcent Website](https://alibro005.github.io/Web-Practice/Project/)
+- [AI Website](https://alibro005.github.io/Web-Practice/AI-website/)
+- [Guess No.](https://alibro005.github.io/Web-Practice/guess_no/)
+- [Tic Tac Toe](https://alibro005.github.io/Web-Practice/project_6/)
+- [Weather App](https://alibro005.github.io/Web-Practice/project_8/) (API Not Added)
   
 ###  License
   
