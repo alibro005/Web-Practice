@@ -25,12 +25,12 @@ This repo is meant to:
 - Suggestions and feedback are always welcome!
 
 ###  Live Links
-- [Nexcent Website](https://alibro005.github.io/web-practice/Project/)
-- [AI Website](https://alibro005.github.io/web-practice/AI-website/)
-- [Guess No.](https://alibro005.github.io/web-practice/guess_no/)
-- [Tic Tac Toe](https://alibro005.github.io/web-practice/project_6/)
-- [Weather App](https://alibro005.github.io/web-practice/project_8/) (API Not Added)
-- [TO DO App](https://alibro005.github.io/web-practice/To_Do/)
+- [Nexcent Website](alibro005.github.io/web-practice/Project/)
+- [AI Website](alibro005.github.io/web-practice/AI-website/)
+- [Guess No.](alibro005.github.io/web-practice/guess_no/)
+- [Tic Tac Toe](alibro005.github.io/web-practice/project_6/)
+- [Weather App](alibro005.github.io/web-practice/project_8/) (API Not Added)
+- [TO DO App](alibro005.github.io/web-practice/To_Do/)
   
 ###  License
   
