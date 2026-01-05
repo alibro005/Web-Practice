@@ -33,6 +33,6 @@ This repo is meant to:
   
 ###  License
   
-Licensed under the [MIT License]
+Licensed under the MIT License.
   
 > Made with ☕ and curiosity — Muhammad Ali Siddiqui
